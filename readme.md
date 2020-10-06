@@ -7,8 +7,8 @@
 
 ## Linkek:
 
-|  Link  | README                    |
-| ------ | ------------------------- |
+| Link   | README              |
+| ------ | ------------------- |
 | GitHub | [Link leírása][git] |
 
 ## Egyéb:
@@ -19,12 +19,14 @@
     -   Ide jön ami alá van
     -   Még valami
         -Ide is még egy
+        -Ez még1
 
 ### Kódrészlet:
 
 ```sh
 $ node app
 ```
+
 ```c#
 Console.WriteLine("Valami");
 ```
