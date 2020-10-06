@@ -7,9 +7,9 @@
 
 ## Linkek:
 
-| Plugin | README                    |
+|  Link  | README                    |
 | ------ | ------------------------- |
-| GitHub | [https://google.com][git] |
+| GitHub | [Link leírása][git] |
 
 ## Egyéb:
 
@@ -24,6 +24,9 @@
 
 ```sh
 $ node app
+```
+```c#
+Console.WriteLine("Valami");
 ```
 
 ### Erőős:
