@@ -6,13 +6,13 @@ export default class FBerlet extends Utas {
     constructor(sor: string) {
         super(sor);
         const adatok: string[] = sor.split(" ");
-        this._tipus = adatok[4];
+        this._tipus = adatok[3];
         const ev = parseInt(adatok[4].substr(0, 4));
         const ho = parseInt(adatok[4].substr(4, 2)) - 1; //hónap számozás 0-val indul
         const nap = parseInt(adatok[4].substr(6, 2));
-        this._ervenyes = new Date(ev, ho, nap, 23, 59);
+        this._ervenyes = new Date(ev, ho, nap, 23, 59, 59, 999);
     }
-    public get Ervenytelen(): number {
-        return this._ervenyes > this._felszallas ? 0 : 1;
+    public get Ervenytelen(): boolean {
+        return !(this._ervenyes >= this._felszallas);
     }
 }

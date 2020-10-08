@@ -24,8 +24,10 @@ export default class Content {
         // Kezd a kódolást innen -->
         const megold: Megoldas = new Megoldas("utasadat.txt");
 
-        res.write(`2. feladat: <br/>A buszra ${megold.Count} utas akart felszállni.<br/>`);
-        res.write(`3. feladat: <br />A buszra ${megold.Ervenytelen} utas nem szállhatott fel.<br/>`);
+        res.write(`2. feladat: \nA buszra ${megold.Count} utas akart felszállni.\n`);
+        res.write(`3. feladat: \nA buszra ${megold.Ervenytelen} utas nem szállhatott fel.\n`);
+        res.write(`4. feladat: \nA legtöbb utas (${megold.LegtobbFelszallo.maxFelszallo}fő) a ${megold.LegtobbFelszallo.maxElsoMegallo}. megállóban próbált felszállni.\n`);
+        //res.write(`5.feladat: \nIngyen utazók száma: ${} fő\nA kedvezményesen utazók száma: ${} fő`);
 
         // <---- Fejezd be a kódolást
 

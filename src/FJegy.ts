@@ -6,7 +6,8 @@ export default class FJegy extends Utas {
         super(sor);
         this._jegyekSzama = parseInt(sor.split(" ")[4]);
     }
-    public get Ervenytelen(): number {
-        return this._jegyekSzama >= 1 ? 0 : 1;
+    public get Ervenytelen(): boolean {
+        return !(this._jegyekSzama >= 1);
+        //return false;
     }
 }
